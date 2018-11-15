@@ -1,4 +1,4 @@
-package pojo.result;
+package org.projectshop.pojo.result;
 
 public class Result {
     private Integer code;
@@ -36,5 +36,14 @@ public class Result {
                 ", message='" + message + '\'' +
                 ", result=" + result +
                 '}';
+    }
+
+    public Result() {
+        super();
+    }
+    public Result(Integer code,String message, Object result) {
+        this.code = code;
+        this.message = message;
+        this.result = result;
     }
 }

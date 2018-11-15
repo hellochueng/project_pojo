@@ -1,10 +1,10 @@
-package pojo.user;
+package org.projectshop.pojo;
 
 import com.sun.tools.javac.util.List;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.shiro.crypto.hash.Sha512Hash;
-import pojo.BasePojo;
+import org.projectshop.pojo.BasePojo;
 
 import java.util.Date;
 
@@ -24,11 +24,20 @@ public class User extends BasePojo {
     //用户昵称
     private String name;
 
+    //性别
+    private Integer sex;
+
     //手机
     private String moblie;
 
     //邮箱
     private String email;
+
+    //头像地址
+    private String picurl;
+
+    //签名
+    private String signature;
 
     //注册时间
     private Date registerTime;
@@ -36,14 +45,60 @@ public class User extends BasePojo {
     //锁定时间
     private Date lockTime;
 
+
     //最后登陆时间
     private Date lastLoginTime;
 
     //登陆错误次数
     private Integer errorCount;
 
+    //简介
+    private String summary;
+
+    //地址
+    private String address;
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
     private List<loginIP> ipList;
 
+    public String getSummary() {
+        return summary;
+    }
+
+    public void setSummary(String summary) {
+        this.summary = summary;
+    }
+
+    public String getSignature() {
+        return signature;
+    }
+
+    public void setSignature(String signature) {
+        this.signature = signature;
+    }
+
+    public String getPicurl() {
+        return picurl;
+    }
+
+    public Integer getSex() {
+        return sex;
+    }
+
+    public void setSex(Integer sex) {
+        this.sex = sex;
+    }
+
+    public void setPicurl(String picurl) {
+        this.picurl = picurl;
+    }
 
     public String getUserName() {
         return userName;

@@ -1,6 +1,6 @@
-package pojo.user;
+package org.projectshop.pojo;
 
-import pojo.BasePojo;
+import org.projectshop.pojo.BasePojo;
 
 public class Permission extends BasePojo {
 

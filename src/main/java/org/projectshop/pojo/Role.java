@@ -1,7 +1,7 @@
-package pojo.user;
+package org.projectshop.pojo;
 
 import com.sun.tools.javac.util.List;
-import pojo.BasePojo;
+import org.projectshop.pojo.BasePojo;
 
 public class Role extends BasePojo {
 

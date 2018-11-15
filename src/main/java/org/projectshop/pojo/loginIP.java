@@ -1,6 +1,6 @@
-package pojo.user;
+package org.projectshop.pojo;
 
-import pojo.BasePojo;
+import org.projectshop.pojo.BasePojo;
 
 import java.util.Date;
 
@@ -9,4 +9,5 @@ public class loginIP extends BasePojo {
     private String IP;
 
     private Date time;
+
 }

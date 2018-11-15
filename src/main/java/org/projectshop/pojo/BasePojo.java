@@ -1,16 +1,16 @@
-package pojo;
+package org.projectshop.pojo;
 
-import javax.persistence.MappedSuperclass;
 
-@MappedSuperclass
 public class BasePojo {
 
     //实体id
     private String id;
+
     //实体创建时间
-    private String createtime;
+    private String createDate;
+
     //实体修改啊时间
-    private String modifiedTime;
+    private String modifiedDate;
 
     private boolean valid = true;
 
@@ -31,18 +31,18 @@ public class BasePojo {
     }
 
     public String getCreatetime() {
-        return createtime;
+        return createDate;
     }
 
     public void setCreatetime(String createtime) {
-        this.createtime = createtime;
+        this.createDate = createtime;
     }
 
     public String getModifiedTime() {
-        return modifiedTime;
+        return modifiedDate;
     }
 
     public void setModifiedTime(String modifiedTime) {
-        this.modifiedTime = modifiedTime;
+        this.modifiedDate = modifiedTime;
     }
 }
