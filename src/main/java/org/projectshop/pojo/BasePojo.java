@@ -1,7 +1,9 @@
 package org.projectshop.pojo;
 
 
-public class BasePojo {
+import java.io.Serializable;
+
+public class BasePojo implements Serializable{
 
     //实体id
     private String id;
